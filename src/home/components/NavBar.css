@@ -1,0 +1,88 @@
+/* ================= MODERNIZED NAVIGATION BAR ================= */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 960px;
+  height: 64px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 32px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(100, 116, 139, 0.2); /* soft line */
+
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  z-index: 9999;
+}
+
+/* ================= NAME ================= */
+.nav-left {
+  font-family: "Merriweather", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+
+  color: #1e293b;
+  cursor: pointer;
+
+  padding-bottom: 4px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-btn:hover {
+  color: var(--accent);
+}
+
+.nav-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.nav-btn:hover::after,
+.nav-btn.active::after {
+  width: 100%;
+}
+
+.nav-btn.active {
+  color: var(--accent);
+}
+
+/* ================= PAGE CONTENT MARGIN ================= */
+.homepage-container {
+  padding-top: 96px; /* gives breathing room */
+}

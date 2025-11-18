@@ -1,0 +1,98 @@
+/* ============ Project Card (Academic Theme) ============ */
+.project-card {
+  margin: 60px auto;
+  padding: 28px 32px;
+  max-width: 900px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  color: #1e293b;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ============ Title ============ */
+.project-title {
+  font-family: "Merriweather", serif;
+  font-size: 1.9rem;
+  color: #1e3a8a; /* academic navy */
+  margin-bottom: 12px;
+}
+
+/* ============ Description ============ */
+.project-desc {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  margin-bottom: 25px;
+  color: #374151;
+}
+
+/* ============ Slider ============ */
+.project-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  border: 1px solid #e2e8f0;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slide-btn:hover {
+  background: #f1f5f9;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.prev {
+  left: 14px;
+}
+
+.next {
+  right: 14px;
+}
+
+/* ============ Link Button ============ */
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 20px;
+  background: #1e3a8a; /* navy */
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #1e3a8a;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  background: #162c6b;
+  transform: translateY(-1px);
+}
